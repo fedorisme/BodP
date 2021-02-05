@@ -1,0 +1,85 @@
+@font-face {
+  font-family: ArTarumianMHarvats;
+  src: url(../fonts/HARVATS.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+	font-family: 'Biryani', sans-serif;
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+h1 {
+	font-family: ArTarumianMHarvats, Arial, Sans-Serif;
+	color: red;
+	text-transform: uppercase;
+}
+
+a {
+	color: white;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin: 0 auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.7);
+}
+
+header img {
+	width: 100px;
+}
+
+nav {
+	align-self: flex-end;
+}
+
+nav ul, nav li {
+	display: inline-block;
+}
+
+nav ul {
+	margin: 9px 0px;
+}
+
+nav li {
+	margin-left: -4px;
+}
+
+nav a {
+	padding: 8px;
+	color: red;
+	text-decoration: none;
+	transition-duration: 0.3;
+	text-transform: uppercase;
+	border: 1px dotted white;
+}
+
+nav a:hover {
+	color: white;
+	background-color: red;
+	transition: 0.5s;
+}
+
+main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#banner {
+	height: 500px;
+	background-size: cover;
+	background-image: url("../images/temp-audience1.jpg");
+}
+
+.black_block {
+	background-color: black;
+	color: white;
+	padding: 10px 20px;
+}
