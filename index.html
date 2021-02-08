@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
 	<meta charset="UTF-8" />
 	<title>Brood op de Planken</title>
 	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Biryani&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="scripts/main.js" defer></script>
 </head>
 <body>
 	<div id=mainwrapper>
-		<header>
-			<div id=banner>
-				<img src="images/BodP-logo-transparant.png" alt="Logo">
+		<div id=banner>
+			<div id=logo></div>
+			<!-- <img src="images/BodP-logo-transparant.png" alt="Logo"> -->
+		</div>
+		<div id="navbar">
+			<div>
+				<div class="hidelogo" id="navlogo">
+				</div>
 			</div>
-
 			<nav>
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -22,36 +27,181 @@
 					<li><a href="#">Arrangementen</a></li>
 					<li><a href="#">Speellijst</a></li>
 					<li><a href="#">Contact</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">NL</a></li>
-					<li><a href="#">UK</a></li>
-					<li><a href="#">DE</a></li>
-					<li><a href="#">ES</a></li>
+					<li>
+						<div id="sl-nav">
+							Taal:
+							<ul>
+								<li><b>NL</b><i class="fa fa-angle-down" aria-hidden="true"></i>
+									<div class="triangle"></div>
+									<ul>
+										<li><div class="sl-flag flag-nl"><a href="#"></div> <span class="active">Nederlands</span></a></li>
+										<li><div class="sl-flag flag-en"><a href="#"></div> <span>English</span></a></li>
+										<li><div class="sl-flag flag-de"><a href="#"></div> <span class="active">Deutsch</span></a></li>
+										<li><div class="sl-flag flag-es"><a href="#"></div> <span class="active">Español</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</nav>
-		</header>
+		</div>
+
 		<main>
-			<h1>Brood op de Planken</h1>
-			<div class="black_block">
-				<p>Vanaf een kwartier, half uur of avondvullend...Voor bedrijf, eetcafé/restaurant, theater,
-				school of studentenvereniging. Voor een opening, jubileum, verjaardag of zomaar...</p>
+			<section class="flex-section">
+				<div class="textblok">
+					<h1>Brood op de Planken</h1>
+					<p>Vanaf een kwartier, half uur of avondvullend...Voor bedrijf, eetcafé/restaurant, theater,
+					school of studentenvereniging. Voor een opening, jubileum, verjaardag of zomaar...</p>
 
-				<p>Brood op de planken levert comedy, muziek en magie met verse talenten en doorbakken ervaren rotten als Donald Olie of Paradijsvogel/Illusionist Arnoldjan Scheer (alias Celsius).</p>
+					<p>Brood op de planken levert comedy, muziek en magie met verse talenten en doorbakken ervaren rotten als Donald Olie of Paradijsvogel/Illusionist Arnoldjan Scheer (alias Celsius).</p>
 
-				<p>Ook ontwikkelen wij speciale happenings. Kijk hiervoor onder Arrangementen.</p>
+					<p>Ook ontwikkelen wij speciale happenings. Kijk hiervoor onder Arrangementen.</p>
 
-				<p>Wij werken samen met de volgende toprestaurants:</p>
+					<p>Wij werken samen met de volgende toprestaurants:</p>
 
-				<ul>
-					<li><a href="#">De Biergrill - Amsterdam</a></li>
-					<li><a href="#">Lucca Due - Amsterdam</a></li>
-					<li><a href="#">Geflipt - Amsterdam</a></li>
-				</ul>
-			</div>
+					<ul>
+						<li><a href="#">De Biergrill - Amsterdam</a></li>
+						<li><a href="#">Lucca Due - Amsterdam</a></li>
+						<li><a href="#">Geflipt - Amsterdam</a></li>
+					</ul>
+				</div>
+				<div class="sectionimage" id="aboutimage">
+					<img src="images/temp-audience2.jpg">
+				</div>
+			</section>
+			<section class="flex-section" id="arrangement">
+				<div class="sectionimage">
+					<img src="images/mic1.jpg">
+				</div>
+				<div class="textblok">
+					<h2>Arrangementen</h2>
+					<p>Voor middag/avondvullend kwaliteitsentertainment spelen wij graag op aansprekende locaties met een podium.</p>
+					<p>Zo bieden wij 9 voorstellingen die zeer goed met een (borrel)hapje, brunch of menu te combineren zijn.</p>
+					<p>Deze shows zijn ook onderling te combineren. Voorstelling 1 en 4 t/m 8 kunnen ook in het Engels of Duits gespeeld worden.</p>
+					<a class="btn" href="">Onze Mogelijkheden</a>
+				</div>
+			</section>
+			<section class="gallery-section">
+				<h2>Onze artiesten</h2>
+				<p>Een greep uit onze artiesten.</p>
+				<div class="gallery-box">
+					<div class="gallery-item" id="artiest1">
+						<a href=""><div class="artiesttekst">
+							<h4>Roel C. Verburg</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest2">
+						<a href=""><div class="artiesttekst">
+							<h4>Bas Birker</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest3">
+						<a href=""><div class="artiesttekst">
+							<h4>Edo Berger</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest4">
+						<a href=""><div class="artiesttekst">
+							<h4>Arie Koomen</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest5">
+						<a href=""><div class="artiesttekst">
+							<h4>Patrick Meijer</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest6">
+						<a href=""><div class="artiesttekst">
+							<h4>Steven Stol</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest7">
+						<a href=""><div class="artiesttekst">
+							<h4>Neville Raven</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item">
+						<a href=""><div class="artiestmore">
+							<h4>MEER ARTIESTEN</h4>
+						</div></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="flex-section" id="speellijst">
+				<div class="textblok">
+					<H2>Speellijst</H2>
+					<p>Hieronder een overzicht van enkele van onze geplande shows.</p>
+					<ul>
+						<li><a href=" https://www.facebook.com/events/1312632199096036 " target="_blank"><time datetime=" 2020-12-16 "> 16-12 </time> - Amsterdam - Comedy Cafe</a></li>
+						<li><a href=" https://www.binnenpretcomedy.nl/ " target="_blank"> <time datetime=" 2020-12-18 "> 18-12 </time> - Private - Corporate gig</a></li>
+						<li><time datetime=" 2020-12-20 "> 20-12 </time> - Amsterdam - Comedy Cafe </li> 
+						<li><time datetime=" 2020-12-23 "> 23-12 </time> - Amsterdam - Comedy Cafe </li> 
+						<li><time datetime=" 2020-12-30 "> 30-12 </time> - EIndhoven - Effenaar/Popei (NL) </li> 
+						<li><time datetime=" 2021-01-21 "> 21-1 </time> - Heerlen - Cultuurhuis Heerlen (NL) </li> 
+						<li><time datetime=" 2021-02-21 "> 21-2 </time> - Eindhoven - Effenaar (NL) </li> 
+					</ul>
+				</div>
+				<div class="sectionimage" id="aboutimage">
+					<img src="images/temp-audience2.jpg">
+				</div>
+			</section>
+
+			<section id="contact">
+				<div id="contactform">
+					<h2>Contact</h2>
+					<form action="action_page.php">
+
+						<label for="name">Naam*</label>
+						<input type="text" id="name" name="naam" placeholder="Uw naam..">
+
+						<label for="email">E-mailadres*</label>
+						<input type="text" id="email" name="emailadres" placeholder="Uw e-mailadres..">
+
+						<label for="arrangementkeuze">Is er een specifiek arrangement waar u interesse in heeft?</label>
+						<select id="arrangementkeuze" name="arrangement">
+							<option value="geen">--maar een keuze indien van toepassing--</option>
+							<option value="arrangement-1">1-Smakelijk Lachen</option>
+							<option value="arrangement-2">2-Muzikaal Onthaal</option>
+							<option value="arrangement-3">3-Schlager Salon</option>
+							<option value="arrangement-4">4-Magisch Menu</option>
+							<option value="arrangement-5">5-Lekkere Babbel</option>
+							<option value="arrangement-6">6-Watertanden</option>
+							<option value="arrangement-7">7-Wondersurprise</option>
+							<option value="arrangement-8">8-Klaar-In-Een-Handomdraai</option>
+							<option value="arrangement-9">9-Open Podium</option>
+						</select>
+
+						<label for="bericht">Bericht*</label>
+						<textarea id="bericht" name="bericht" placeholder="uw bericht.." style="height:200px"></textarea>
+
+						<input type="submit" value="Verstuur">
+
+					</form>
+				</div>
+				<div id="contactinfo">
+					<h2>Contact</h2>
+					<p>Wilt u meer informatie over tarieven, mogelijkheden en artiesten? Aarzel dan niet contact met ons op te nemen.</p>
+					<p>U kunt ons telefonisch tot 21.00 's avonds bereiken.</p>
+					<p>Telefoon: 06-38365707</p>
+					<p>Email: <a href="mailto:info@broodopdeplanken.nl">info@broodopdeplanken.nl</a></p>
+					<h4>Bedrijfsgegevens</h4>
+					<p>Geregistreerd sinds november 2004 bij de Kamer van Koophandel Amsterdam onder nummer 34213933</p>
+
+				</div>
+			</section>
+
 		</main>
 		<footer>
-
+			<small>Copyright © 2021 Brood op de Planken</small>
 		</footer>	
 	</div>
 </body>
