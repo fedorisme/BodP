@@ -7,7 +7,6 @@ var bodyRect = document.body.getBoundingClientRect();
     offset   = elemRect.top - bodyRect.top;
 
 document.onscroll = function(){
-
 	if (window.pageYOffset > (offset - 8)) {
 		console.log("hamster");
 		document.getElementById('navlogo').classList.add("showlogo");
