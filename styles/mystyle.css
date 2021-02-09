@@ -86,10 +86,6 @@ header img {
 	transition: 0.8s;
 }
 
-nav {
-
-}
-
 nav ul, nav li {
 	display: inline-block;
 }
@@ -278,6 +274,47 @@ main {
 	transition-duration: 0.3s;
 }
 
+/*Nieuws sectie*/
+
+#news {
+	display: flex;
+	align-items: center;
+	background-color: red;
+	color: white;
+	padding: 4px 20px;
+}
+
+.newsimage {
+	width: 400px;
+}
+
+.newsimage img {
+	display: block;
+	width: 300px;
+	margin: 14px auto;
+	padding-left: 10px;
+}
+
+.news-btn {
+	display: inline-block;
+	padding: 13px 26px;
+	text-transform: uppercase;
+	background-color: white;
+	color: red;
+	text-decoration: none;
+	margin: 10px auto;
+	border: solid 2px white;
+	transition-duration: 0.3s;
+}
+
+.news-btn:hover {
+	background-color: red;
+	color: white;
+	transition-duration: 0.3s;
+}
+
+/*Artiesten foto sectie*/
+
 .gallery-section {
 	margin-bottom: 40px;
 }
@@ -453,8 +490,13 @@ footer {
 	margin-bottom: 20px;
 }
 
+.gallerywrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
 .gallerywrapper img {
-	height: 150px;
+	height: 300px;
 	margin: 10px;
 	padding: 4px;
 	background-color: #ddd;
