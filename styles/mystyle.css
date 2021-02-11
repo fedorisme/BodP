@@ -463,11 +463,11 @@ main {
 
 /*Speellijst*/
 
-#speellijst {
+#speellijst-main {
 	margin-bottom: 50px;
 }
 
-#speellijst a {
+#speellijst-main a {
 	text-decoration: underline;
 }
 
@@ -488,6 +488,17 @@ main {
 #contactinfo a {
 	color: white;
 	text-decoration: none;
+}
+
+#contactimgwrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+#contactimgwrapper img {
+	width: 200px;
 }
 
 #contactform {
@@ -634,3 +645,68 @@ iframe {
 	border: 0px;
 }
 
+/*Pagina Speellijst*/
+
+#speellijst {
+	padding-inline-start: 0px;
+	margin: 30px 50px;
+}
+
+#speellijst li {
+	display: flex;
+	margin: 10px 0px;
+	background-color: red;
+}
+
+.speel-date {
+	width: 150px;
+	height: 80px;
+	background-color: #ddd;
+	text-align: center;
+	padding: 10px;
+}
+
+.speel-date time {
+	display: block;
+	font-family: ArTarumianMHarvats, Arial, Sans-Serif;
+	font-size: 1.5em;
+	margin-top: 8px;
+}
+
+.dag {
+	font-family: ArTarumianMHarvats, Arial, Sans-Serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.speel-info {
+	height: 92px;
+	width: 100%;
+	background-color: #aaa;
+	border: 4px solid black;
+	padding: 0px 15px;
+	transition: 0.5s;
+}
+
+.eventlink {
+	text-decoration: none;
+}
+
+.speel-info h2 {
+	margin: 10px 0px 5px;
+}
+
+.speel-info p {
+	margin: 8px 0px;
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.speel-info:hover {
+	transform: translate(5px, -5px);
+	transition: 0.5s;
+}
+
+li:nth-child(odd) .speel-info {
+	background-color: #ddd;
+}
