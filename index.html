@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
+<head> 
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Brood op de Planken</title>
 	<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,20 +17,22 @@
 
 </head>
 <body>
-	<div id="logo"></div>
 	<div id="mainwrapper">
 		<div id="banner">
 			<div class="mySlides fade" id="slide1"></div>
 			<div class="mySlides fade" id="slide2"></div>
 			<div class="mySlides fade" id="slide3"></div>
 		</div>
+		<div id="logo"></div>
 		<div id="navbar">
 			<div>
 				<div class="hidelogo" id="navlogo">
 				</div>
 			</div>
-			<nav>
+			<div id="menuback" class="hide"></div>
+			<nav id="menu" class="inactive">
 				<ul>
+					<li id="menuclose"><a href="#">X</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Artiesten</a></li>
 					<li><a href="#">Arrangementen</a></li>
@@ -43,10 +46,10 @@
 								<li><b>NL</b><i class="fa fa-angle-down" aria-hidden="true"></i>
 									<div class="triangle"></div>
 									<ul>
-										<li><div class="sl-flag flag-nl"><a href="index.html"></div> <span class="active">Nederlands</span></a></li>
-										<li><div class="sl-flag flag-en"><a href="#"></div> <span>English</span></a></li>
-										<li><div class="sl-flag flag-de"><a href="#"></div> <span class="active">Deutsch</span></a></li>
-										<li><div class="sl-flag flag-es"><a href="#"></div> <span class="active">Español</span></a></li>
+										<li><div class="sl-flag flag-nl"><a href="index.html"></div> <span class="active"><span class="langlong">Nederlands</span><span class="langshort">NL</span></span></a></li>
+										<li><div class="sl-flag flag-en"><a href="#"></div> <span><span class="langlong">English</span><span class="langshort">EN</span></span></a></li>
+										<li><div class="sl-flag flag-de"><a href="#"></div> <span class="active"><span class="langlong">Deutsch</span><span class="langshort">DE</span></span></a></li>
+										<li><div class="sl-flag flag-es"><a href="#"></div> <span class="active"><span class="langlong">Español</span><span class="langshort">ES</span></span></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -54,6 +57,9 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="menutoggle">
+		  		<a href="#">&#9776;</a>
+		  	</div>
 		</div>
 
 		<main>

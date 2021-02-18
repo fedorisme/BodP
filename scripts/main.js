@@ -48,3 +48,39 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
+
+document.getElementsByClassName('menutoggle')[0].onclick = function () {
+  var menu = document.getElementById('menu');
+  var menuback = document.getElementById('menuback');
+  if(menu.className == "active"){
+    menu.className = "inactive";
+    menuback.className = "hide";
+  } else {
+    menu.className = "active";
+    menuback.className = "show";
+  }
+}
+
+document.getElementById('menuback').onclick = function () {
+  var menu = document.getElementById('menu');
+  var menuback = document.getElementById('menuback');
+  if(menu.className == "active"){
+    menu.className = "inactive";
+    menuback.className = "hide";
+  } else {
+    menu.className = "active";
+    menuback.className = "show";
+  }
+}
+
+document.getElementById('menuclose').onclick = function () {
+  var menu = document.getElementById('menu');
+  var menuback = document.getElementById('menuback');
+  if(menu.className == "active"){
+    menu.className = "inactive";
+    menuback.className = "hide";
+  } else {
+    menu.className = "active";
+    menuback.className = "show";
+  }
+}
