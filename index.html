@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head> 
+<head>  
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Brood op de Planken</title>
@@ -37,11 +37,11 @@
 					<li><a href="#">Artiesten</a></li>
 					<li><a href="#">Arrangementen</a></li>
 					<li><a href="speellijst.html">Speellijst</a></li>
-					<li><a href="#">Over Ons</a></li>
+					<li><a href="#" class="verberg">Over Ons</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
 					<li>
 						<div id="sl-nav">
-							Taal:
+							<span class="verberg">Taal:</span>
 							<ul>
 								<li><b>NL</b><i class="fa fa-angle-down" aria-hidden="true"></i>
 									<div class="triangle"></div>
@@ -58,8 +58,8 @@
 				</ul>
 			</nav>
 			<div class="menutoggle">
-		  		<a href="#">&#9776;</a>
-		  	</div>
+				<a href="#">&#9776;</a>
+			</div>
 		</div>
 
 		<main>
@@ -75,11 +75,7 @@
 
 					<p>Wij werken samen met de volgende toprestaurants:</p>
 
-					<ul>
-						<li><a href="#">De Biergrill - Amsterdam</a></li>
-						<li><a href="#">Lucca Due - Amsterdam</a></li>
-						<li><a href="#">Geflipt - Amsterdam</a></li>
-					</ul>
+					<a class="btn" href="#">Mee over ons</a>
 				</div>
 				<div class="sectionimage" id="aboutimage">
 					<img src="images/temp-audience2.jpg">
@@ -110,8 +106,10 @@
 				</div>
 			</section>
 			<section class="gallery-section">
-				<h2>Onze artiesten</h2>
-				<p>Een greep uit onze artiesten.</p>
+				<div id="gallery-intro">
+					<h2>Onze artiesten</h2>
+					<p>Een greep uit onze artiesten.</p>
+				</div>
 				<div class="gallery-box">
 					<div class="gallery-item" id="artiest1">
 						<a href=""><div class="artiesttekst">
@@ -152,6 +150,12 @@
 					<div class="gallery-item" id="artiest7">
 						<a href=""><div class="artiesttekst">
 							<h4>Neville Raven</h4>
+							<p>Stand-up Comedian</p>
+						</div></a>
+					</div>
+					<div class="gallery-item" id="artiest8">
+						<a href=""><div class="artiesttekst">
+							<h4>Fedor Ikelaar</h4>
 							<p>Stand-up Comedian</p>
 						</div></a>
 					</div>

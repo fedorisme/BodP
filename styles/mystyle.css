@@ -331,7 +331,7 @@ main {
 
 .sectionimage img {
 	display: block;
-	width: 500px;
+	max-width: 500px;
 	margin: 0px auto;
 }
 
@@ -380,13 +380,14 @@ main {
 }
 
 .news-btn {
-	display: inline-block;
+	display: block;
 	padding: 13px 26px;
+	width: 100px;
 	text-transform: uppercase;
 	background-color: white;
 	color: red;
 	text-decoration: none;
-	margin: 10px auto;
+	margin: 10px;
 	border: solid 2px white;
 	transition-duration: 0.3s;
 }
@@ -451,6 +452,11 @@ main {
 	background-image: url("../images/artiest/neville-raven.jpg");
 }
 
+#artiest8 {
+	background-size: cover;
+	background-image: url("../images/artiest/fedor/300.jpg");
+	display: none;
+}
 
 .artiestmore {
 	width: 298px;
@@ -520,6 +526,10 @@ main {
 	color: white;
 	background-color: black;
 	padding: 5px 15px;
+}
+
+#contactinfo h2 {
+	opacity: 0;
 }
 
 #contactinfo a {
@@ -766,14 +776,37 @@ li:nth-child(odd) .speel-info {
 	display: none;
 }
 
-@media only screen and (max-width: 601px){
+@media only screen and (max-width: 1200px){
+	.gallery-section {
+		width: 900px;
+		margin: 0px auto;
+	}
+
+	#artiest8 {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px){
+	.verberg {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.sectionimage img {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (max-width: 900px){
 	#banner, #slide1, #slide2, #slide3 {
-		height: 300px;
+		height: 400px;
 	}
 
 	#logo {
-		background: url(../images/BodP-logo-transparant-300.png) no-repeat center center;
-		height: 300px;
+		background: url(../images/BodP-logo-transparant-400.png) no-repeat center center;
+		height: 400px;
 	}
 
 	nav {
@@ -857,8 +890,20 @@ li:nth-child(odd) .speel-info {
 		padding-bottom: 4px;
 	}
 
+	.gallery-section {
+		width: 600px;
+		margin: 0px auto;
+	}
+
+	#artiest8 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px){
 	.flex-section {
 		flex-direction: column;
+		margin-top: 5px;
 	}
 
 	#arrangement {
@@ -866,11 +911,73 @@ li:nth-child(odd) .speel-info {
 	}
 
 	.textblok {
-	width: 90%;
-	padding: 8px 8px 8px 20px;
-}
+		width: 94%;
+		padding: 8px 8px 8px 20px;
+	}
 
 	.sectionimage {
 		width: 100%;
 	}
+	.sectionimage {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#banner, #slide1, #slide2, #slide3 {
+		height: 300px;
+	}
+
+	#logo {
+		background: url(../images/BodP-logo-transparant-300.png) no-repeat center center;
+		height: 300px;
+	}
+
+
+	#news {
+		flex-direction: column;
+	}
+
+	.news-btn {
+		margin: 10px auto;
+	}
+
+
+	.gallery-section {
+		width: 300px;
+		margin: 0px auto;
+	}
+
+	#gallery-intro {
+		padding: 0px 20px;
+	}
+
+	.artiesttekst {
+		color: rgba(255,255,255,0.7);
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	#artiest5, #artiest6, #artiest7 {
+		display: none;
+	}
+
+	#contact {
+		flex-direction: column-reverse;
+	}
+
+	#contactinfo {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px 20px 15px;
+	}
+
+	#contactform {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	#contactform h2 {
+		display: none;
+	}
+
 }
