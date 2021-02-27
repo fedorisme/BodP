@@ -123,8 +123,7 @@ header img {
 	background-color: red;
 	clear: both;
 	display: flex;
-	justify-content: space-between;
-	padding-right: 14px;
+	justify-content: space-between;	
 	position: sticky;
 	top: 0;
 }
@@ -194,13 +193,6 @@ main {
 
 /*Language picker styling*/
 
-.langlong {
-	display: inline;
-}
-
-.langshort {
-	display: none;
-}
 
 #sl-nav {
 	display: inline;
@@ -258,6 +250,12 @@ main {
 
 #sl-nav a {
 	color: red;
+	/*	padding: 9px 7px 9px 8px;*/
+}
+
+#sl-nav ul li a {
+	/*	color: red;*/
+	padding: 9px 6px 9px 7px;
 }
 
 #sl-nav a:hover {
@@ -266,23 +264,6 @@ main {
 	text-decoration: underline;
 }
 
-#sl-nav li ul li {
-	position: relative;
-	text-align: left;
-	background: transparent;
-	padding: 15px 15px;
-	padding-bottom:0;
-	z-index: 5;
-	font-size: 14px;
-	color: red;
-	text-transform: uppercase;
-}
-#sl-nav li ul li:last-of-type {
-	padding-bottom: 15px;
-}
-#sl-nav li ul li span {
-	padding-left: 0px;
-}
 .sl-flag {
 	display: inline-block;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
@@ -793,6 +774,19 @@ li:nth-child(odd) .speel-info {
 	}
 }
 
+@media only screen and (min-width: 901px) and (max-width: 980px){
+	#navlogo {
+		width: 268px;
+		height: 24px;
+		margin-top: 6px;
+		margin-left: 10px;
+	}
+
+	nav a {
+		padding: 9px 8px;
+	}
+}
+
 @media only screen and (max-width: 1100px){
 	.sectionimage img {
 		max-width: 90%;
@@ -824,6 +818,11 @@ li:nth-child(odd) .speel-info {
 
 	nav li a {
 		display: block;
+	}
+
+	#sl-nav ul {
+		display: flex;
+		flex-direction: row;
 	}
 
 	#menuclose {
