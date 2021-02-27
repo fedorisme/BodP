@@ -355,7 +355,7 @@ main {
 
 .newsimage img {
 	display: block;
-	width: 300px;
+	max-width: 300px;
 	margin: 14px auto;
 	padding-left: 10px;
 }
@@ -778,8 +778,6 @@ li:nth-child(odd) .speel-info {
 	#navlogo {
 		width: 268px;
 		height: 24px;
-		margin-top: 6px;
-		margin-left: 10px;
 	}
 
 	nav a {
@@ -789,6 +787,10 @@ li:nth-child(odd) .speel-info {
 
 @media only screen and (max-width: 1100px){
 	.sectionimage img {
+		max-width: 90%;
+	}
+
+	.newsimage img {
 		max-width: 90%;
 	}
 }
@@ -920,6 +922,10 @@ li:nth-child(odd) .speel-info {
 	.sectionimage {
 		margin-bottom: 20px;
 	}
+
+	.newsimage {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 600px){
@@ -979,4 +985,20 @@ li:nth-child(odd) .speel-info {
 		display: none;
 	}
 
+}
+
+@media only screen and (max-width: 400px){
+	#banner, #slide1, #slide2, #slide3 {
+		height: 200px;
+	}
+
+	#logo {
+		background: url(../images/BodP-logo-transparant-200.png) no-repeat center center;
+		height: 200px;
+	}
+
+	#navlogo {
+		width: 268px;
+		height: 24px;
+	}
 }
