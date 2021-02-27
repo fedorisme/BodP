@@ -899,6 +899,10 @@ li:nth-child(odd) .speel-info {
 	#artiest8 {
 		display: none;
 	}
+
+	#contactimgwrapper {
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 700px){
